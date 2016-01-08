@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\8_StringToInteger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\8_StringToInteger_Test.cpp">
+    <ClCompile Include="..\4_MedianofTwoSortedArrays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\4_MedianofTwoSortedArrays_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
