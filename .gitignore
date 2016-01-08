@@ -1,4 +1,9 @@
 .idea/
 ruby/.idea/
 */.idea/*
-cpp/leetcode/
+
+cpp/leetcode/*
+!cpp/leetcode/leetcode.sln
+!cpp/leetcode/leetcode.vcxproj
+!cpp/leetcode/leetcode.vcxproj.filters
+!cpp/leetcode/leetcode.vcxproj.user

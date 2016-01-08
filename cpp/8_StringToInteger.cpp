@@ -55,11 +55,11 @@ public:
 	}
 };
 
-int main()
-{
-
-	std::string s = "-2147483649";
-	std::cout << Solution().myAtoi(s) << std::endl;
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//
+//	std::string s = "-2147483649";
+//	std::cout << Solution().myAtoi(s) << std::endl;
+//	system("pause");
+//	return 0;
+//}
