@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\10_RegularExpressionMatching.cpp">
+    <ClCompile Include="..\12_IntegertoRoman.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\10_RegularExpressionMatching_Test.cpp">
+    <ClCompile Include="..\12_IntegertoRoman_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

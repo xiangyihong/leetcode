@@ -152,8 +152,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\10_RegularExpressionMatching.cpp" />
-    <ClCompile Include="..\10_RegularExpressionMatching_Test.cpp" />
+    <ClCompile Include="..\12_IntegertoRoman.cpp" />
+    <ClCompile Include="..\12_IntegertoRoman_Test.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
