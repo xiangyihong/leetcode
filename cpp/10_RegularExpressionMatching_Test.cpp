@@ -32,6 +32,7 @@ TEST(RegularExpressionMatching, NormalTest)
 
 	for (int i = 0; i < test_cases.size(); ++i)
 	{
-		ASSERT_EQ(test_cases[i].result, Solution().isMatch(test_cases[i].s, test_cases[i].regex));
+		ASSERT_EQ(test_cases[i].result, Solution().isMatch(test_cases[i].s, test_cases[i].regex)) 
+			<< "Input: " << (test_cases[i].s + " " + test_cases[i].regex);
 	}
 }
