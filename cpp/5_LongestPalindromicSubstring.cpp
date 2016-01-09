@@ -5,7 +5,7 @@ const int MAX_NUM = 1000;
 
 static int gPalindromTable[MAX_NUM][MAX_NUM];
 
-class Solution 
+class Solution
 {
 public:
 
@@ -24,13 +24,19 @@ public:
 		{
 			if (s[start] == s[end])
 			{
-				bool palindrom = false;
-				if (start + 1 == end)
-					palindrom = true;
+				int palindrom;
+				if (start + 1 >= end)
+				{
+					palindrom = 1;
+				}
 				else
-					palindrom = IsSubsetPalindromic(s, start + 1, end - 1);
-				gPalindromTable[start][end] = palindrom ? 1 : -1;
-				return palindrom;
+				{
+					palindrom = gPalindromTable[start + 1][end - 1];
+				}
+				 
+				//_ASSERT(palindrom != 0);
+				gPalindromTable[start][end] = palindrom;
+				return palindrom == 1 ? true : false;
 			}
 			else
 			{
@@ -45,15 +51,16 @@ public:
 	{
 		int len = s.size();
 
-		for (int i = 0; i < len; ++i)
+		for (int j = 1; j < len; ++j)
 		{
-			for (int j = i+1; j < len; ++j)
+			for (int k = j, i = 0; k < len; ++k, ++i)
 			{
-				IsSubsetPalindromic(s, i, j);
+				IsSubsetPalindromic(s, i, k);
 			}
 		}
+
 	}
-	std::string longestPalindrome(std::string& s) 
+	std::string longestPalindrome(std::string& s)
 	{
 		if (s.size() <= 1)
 			return s;
@@ -62,7 +69,8 @@ public:
 
 		for (int i = 0; i < len; ++i)
 		{
-			for (int j = 0; j < len; ++j)
+			gPalindromTable[i][i] = 1;
+			for (int j = i+1; j < len; ++j)
 			{
 				gPalindromTable[i][j] = 0;
 			}
