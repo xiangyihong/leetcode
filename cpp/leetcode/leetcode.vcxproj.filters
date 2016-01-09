@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\9_PalindromeNumber.cpp">
+    <ClCompile Include="..\10_RegularExpressionMatching.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\9_PalindromeNumber_Test.cpp">
+    <ClCompile Include="..\10_RegularExpressionMatching_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
