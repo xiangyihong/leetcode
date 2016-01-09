@@ -153,9 +153,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\4_MedianofTwoSortedArrays.cpp" />
-    <ClCompile Include="..\4_MedianofTwoSortedArrays_Test.cpp" />
+    <ClCompile Include="..\5_LongestPalindromicSubstring.cpp" />
+    <ClCompile Include="..\5_LongestPalindromicSubstring_Test.cpp" />
     <ClCompile Include="..\6_ZigZagConversion.cpp" />
-    <ClCompile Include="..\6_ZigZagConversion_Test.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

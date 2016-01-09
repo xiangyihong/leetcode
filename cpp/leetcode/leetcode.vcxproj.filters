@@ -21,13 +21,13 @@
     <ClCompile Include="..\4_MedianofTwoSortedArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\4_MedianofTwoSortedArrays_Test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\6_ZigZagConversion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\6_ZigZagConversion_Test.cpp">
+    <ClCompile Include="..\5_LongestPalindromicSubstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\5_LongestPalindromicSubstring_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
