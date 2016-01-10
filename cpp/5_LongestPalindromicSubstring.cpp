@@ -53,7 +53,7 @@ public:
 
 		for (int j = 1; j < len; ++j)
 		{
-			for (int k = j, i = 0; k < len; ++k, ++i)
+			for (int k = j, i = 0; k < len; ++k, ++i) // diagonally
 			{
 				IsSubsetPalindromic(s, i, k);
 			}
