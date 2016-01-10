@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\21_MergeTwoSortedLists.cpp">
+    <ClCompile Include="..\23_MergekSortedLists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\21_MergeTwoSortedLists_Test.cpp">
+    <ClCompile Include="..\23_MergekSortedLists_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

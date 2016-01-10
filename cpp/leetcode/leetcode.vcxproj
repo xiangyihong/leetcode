@@ -150,9 +150,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\21_MergeTwoSortedLists_Test.cpp" />
+    <ClCompile Include="..\23_MergekSortedLists.cpp" />
+    <ClCompile Include="..\23_MergekSortedLists_Test.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
-    <ClCompile Include="..\21_MergeTwoSortedLists.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
