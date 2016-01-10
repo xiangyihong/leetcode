@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\23_MergekSortedLists.cpp">
+    <ClCompile Include="..\24_SwapNodesinPairs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\23_MergekSortedLists_Test.cpp">
+    <ClCompile Include="..\24_SwapNodesinPairs_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

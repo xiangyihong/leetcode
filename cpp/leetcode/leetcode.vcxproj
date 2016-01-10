@@ -150,8 +150,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\23_MergekSortedLists.cpp" />
-    <ClCompile Include="..\23_MergekSortedLists_Test.cpp" />
+    <ClCompile Include="..\24_SwapNodesinPairs.cpp" />
+    <ClCompile Include="..\24_SwapNodesinPairs_Test.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
