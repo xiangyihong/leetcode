@@ -72,7 +72,7 @@ TEST(SwapNodesinPairs, NormalTest)
 	{
 		{{},{}},
 		{{1}, {1}},
-		{{1,2,3,4,5}, {5,4,3,2,1}},
+		{{1,2,3,4,5}, {2,1,4,3,5}},
 	};
 
 	for (int i = 0; i < test_cases.size(); ++i)
