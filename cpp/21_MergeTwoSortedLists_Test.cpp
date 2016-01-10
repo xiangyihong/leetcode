@@ -79,6 +79,20 @@ std::ostream& operator<<(std::ostream& out, const std::vector<T>& vec)
 	return out;
 }
 
+struct DeleteList
+{
+	void operator()(ListNode* l1)
+	{
+		while (l1)
+		{
+			ListNode* next = l1->next;
+			delete l1;
+			l1 = next;
+		}
+	}
+};
+
+
 TEST(MergeTwoSortedLists, NormalTest)
 {
 	std::vector<PramsAndExpectedResult> test_cases =
@@ -94,18 +108,20 @@ TEST(MergeTwoSortedLists, NormalTest)
 
 	for (int i = 0; i < test_cases.size(); ++i)
 	{
-		//auto l1 = std::make_shared<ListNode>(ConstructListNode(test_cases[i].l1));
-		//auto l2 = std::make_shared<ListNode>(ConstructListNode(test_cases[i].l2));
-		//auto result = std::make_shared<ListNode>(ConstructListNode(test_cases[i].result));
+		std::unique_ptr<ListNode, DeleteList> l1(ConstructListNode(test_cases[i].l1), DeleteList());
+		std::unique_ptr<ListNode, DeleteList> l2(ConstructListNode(test_cases[i].l2), DeleteList());
+		std::shared_ptr<ListNode> result(ConstructListNode(test_cases[i].result), DeleteList());
 
 		//std::shared_ptr<ListNode> actual(Solution().mergeTwoLists(l1.get(), l2.get()));
 		//EXPECT_TRUE(EqualList(result.get(), actual.get()))
-		ListNode* l1 = ConstructListNode(test_cases[i].l1);
-		ListNode* l2 = ConstructListNode(test_cases[i].l2);
-		ListNode* result = ConstructListNode(test_cases[i].result);
+		//ListNode* l1 = ConstructListNode(test_cases[i].l1);
+		//ListNode* l2 = ConstructListNode(test_cases[i].l2);
+		//ListNode* result = ConstructListNode(test_cases[i].result);
 
-		ListNode* actual = Solution().mergeTwoLists(l1, l2);
-		EXPECT_TRUE(EqualList(result, actual))
+		std::shared_ptr<ListNode> actual(Solution().mergeTwoLists(l1.release(), l2.release()), DeleteList());
+		// after the merge, l1 and l2 are no longer valid
+
+		EXPECT_TRUE(EqualList(result.get(), actual.get()))
 			<< "Input: l1:" << test_cases[i].l1 << " l2:" << test_cases[i].l2;
 	}
 
