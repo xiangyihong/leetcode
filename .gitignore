@@ -7,3 +7,9 @@ cpp/leetcode/*
 !cpp/leetcode/leetcode.vcxproj
 !cpp/leetcode/leetcode.vcxproj.filters
 !cpp/leetcode/leetcode.vcxproj.user
+!cpp/leetcode/leetcode.bak
+cpp/leetcode/leetcode.bak/*
+!cpp/leetcode/leetcode.bak/leetcode.sln
+!cpp/leetcode/leetcode.bak/leetcode.vcxproj
+!cpp/leetcode/leetcode.bak/leetcode.vcxproj.filters
+!cpp/leetcode/leetcode.bak/leetcode.vcxproj.user
