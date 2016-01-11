@@ -7,6 +7,8 @@
 * };
 */
 #include <vector>
+#include <algorithm>
+#include <utility>
 
 struct ListNode
 {
@@ -25,23 +27,23 @@ public:
 	{
 		if (head == NULL || head->next == NULL)
 			return head;
+
+		int cur_index = 1;
 		ListNode* cur = head;
 		ListNode* pre = cur;
 
 		cur = cur->next;
-		pre->next = NULL;
-		ListNode* next = cur->next;
-		
-		while (next != NULL)
+		++cur_index;
+		while (cur != NULL)
 		{
-			cur->next = pre;
+			if ((cur_index & 1) == 0) // even index
+			{
+				std::swap(pre->val, cur->val);
+			}
 			pre = cur;
-			cur = next;
-			next = next->next;
+			cur = cur->next;
+			++cur_index;
 		}
-		
-		cur->next = pre;
-		return cur;
-
+		return head;
 	}
 };
