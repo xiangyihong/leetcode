@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\22_GenerateParentheses.cpp">
+    <ClCompile Include="..\26_RemoveDuplicatesfromSortedArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\22_GenerateParentheses_Test.cpp">
+    <ClCompile Include="..\26_RemoveDuplicatesfromSortedArray_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

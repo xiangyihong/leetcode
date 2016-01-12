@@ -19,6 +19,7 @@ public:
 	{
 		if (index == n)
 		{
+			container[index] = '\0';
 			std::string tmp = container;
 			oResult.push_back(tmp);
 			return;
