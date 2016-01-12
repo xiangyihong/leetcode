@@ -68,7 +68,7 @@ public:
 		ListNode* first_element_of_group = head;
 		// steps:
 		// 1. find whether there are enough elements for a full group
-		// 2. if do, reverse this group
+		// 2. if so, reverse this group
 		// 3. last group element's next point to the new group's head
 		while (first_element_of_group != NULL)
 		{
