@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\27_RemoveElement.cpp">
+    <ClCompile Include="..\28_ImplementstrStr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\27_RemoveElement_Test.cpp">
+    <ClCompile Include="..\28_ImplementstrStr_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

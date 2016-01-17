@@ -150,8 +150,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\27_RemoveElement.cpp" />
-    <ClCompile Include="..\27_RemoveElement_Test.cpp" />
+    <ClCompile Include="..\28_ImplementstrStr.cpp" />
+    <ClCompile Include="..\28_ImplementstrStr_Test.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
