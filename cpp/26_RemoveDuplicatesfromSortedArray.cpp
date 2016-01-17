@@ -18,7 +18,7 @@ public:
 			}
 			++index;
 		}
-#ifdef TEST_EQUAL
+#ifdef TEST_VECTOR_EQ
 		for (int i = nums.size() - 1; i >= current_end; --i)
 		{
 			nums.erase(nums.begin() + i);

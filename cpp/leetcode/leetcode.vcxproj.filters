@@ -18,10 +18,10 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\26_RemoveDuplicatesfromSortedArray.cpp">
+    <ClCompile Include="..\27_RemoveElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\26_RemoveDuplicatesfromSortedArray_Test.cpp">
+    <ClCompile Include="..\27_RemoveElement_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
