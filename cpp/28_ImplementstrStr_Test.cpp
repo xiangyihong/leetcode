@@ -21,6 +21,7 @@ TEST(ImplementstrStr, NormalTest)
 		{"", "a", -1},
 		{"abcd", "b", 1},
 		{"abcd","e", -1},
+		{"abcd", "d", 3},
 	};
 
 	for (int i = 0; i < test_cases.size(); ++i)
