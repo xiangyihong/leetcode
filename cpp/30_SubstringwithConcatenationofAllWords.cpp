@@ -37,8 +37,10 @@ public:
 		}
 
 		int word_len = words[0].size();
+		int total_len = word_len * words.size();
+		std::string tmp(word_len, 'a');
 
-		for (int i = 0; i < s.size(); ++i)
+		for (int i = 0; (i + total_len) <= s.size(); ++i)
 		{
 			if (sub_indicator[i] == 0)
 				continue;
@@ -49,7 +51,10 @@ public:
 			for (int j = 0; j < words.size(); ++j)
 			{
 				int index = i + word_len * j;
-				std::string tmp = s.substr(index, word_len);
+				for (int k = 0; k < word_len; ++k)
+				{
+					tmp[k] = s[index + k];
+				}
 				
 				auto it = current_words_frequency.find(tmp);
 				if (it == current_words_frequency.end()
