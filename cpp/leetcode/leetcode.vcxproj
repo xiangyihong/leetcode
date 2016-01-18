@@ -150,9 +150,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\30_SubstringwithConcatenationofAllWords.cpp" />
-    <ClCompile Include="..\30_SubstringwithConcatenationofAllWords_Test.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
+    <ClCompile Include="32_LongestValidParentheses.cpp" />
+    <ClCompile Include="32_LongestValidParentheses_Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
