@@ -21,10 +21,10 @@
     <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\32_LongestValidParentheses.cpp">
+    <ClCompile Include="..\20_ValidParentheses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\32_LongestValidParentheses_Test.cpp">
+    <ClCompile Include="..\20_ValidParentheses_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
