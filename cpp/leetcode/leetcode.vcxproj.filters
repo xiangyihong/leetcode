@@ -18,10 +18,13 @@
     <ClCompile Include="..\gtest_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="32_LongestValidParentheses.cpp">
+    <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="32_LongestValidParentheses_Test.cpp">
+    <ClCompile Include="..\32_LongestValidParentheses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\32_LongestValidParentheses_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
