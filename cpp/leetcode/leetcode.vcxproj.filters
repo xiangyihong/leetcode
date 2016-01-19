@@ -21,10 +21,10 @@
     <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\20_ValidParentheses.cpp">
+    <ClCompile Include="..\17_LetterCombinationsofaPhoneNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\20_ValidParentheses_Test.cpp">
+    <ClCompile Include="..\17_LetterCombinationsofaPhoneNumber_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
