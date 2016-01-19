@@ -25,6 +25,9 @@ public:
 
 	void GetCombination(std::string& digits, int index, std::string& current_combination, std::vector<std::string>& result)
 	{
+		if (index >= digits.size())
+			return;
+
 		const std::string& letters = GetMappedLetters(digits[index]);
 
 		for (int i = 0; i < letters.size(); ++i)
@@ -40,11 +43,11 @@ public:
 			}
 		}
 	}
-	bool IsValidDigit(char c)
+	bool IsValidDigit(char c) const
 	{
 		return c >= '2' && c <= '9';
 	}
-	const std::string& GetMappedLetters(char digit)
+	const std::string& GetMappedLetters(char digit) const
 	{
 		static std::map<char, std::string> DigitToLetters = 
 		{
