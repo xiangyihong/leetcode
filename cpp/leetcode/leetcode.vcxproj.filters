@@ -21,10 +21,10 @@
     <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\17_LetterCombinationsofaPhoneNumber.cpp">
+    <ClCompile Include="..\31_NextPermutation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\17_LetterCombinationsofaPhoneNumber_Test.cpp">
+    <ClCompile Include="..\31_NextPermutation_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
