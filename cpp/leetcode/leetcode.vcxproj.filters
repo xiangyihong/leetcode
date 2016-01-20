@@ -21,10 +21,10 @@
     <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\33_SearchinRotatedSortedArray.cpp">
+    <ClCompile Include="..\58_LengthofLastWord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\33_SearchinRotatedSortedArray_Test.cpp">
+    <ClCompile Include="..\58_LengthofLastWord_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
