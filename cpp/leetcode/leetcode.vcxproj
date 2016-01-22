@@ -150,8 +150,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\268_MissingNumber.cpp" />
-    <ClCompile Include="..\268_MissingNumber_Test.cpp" />
+    <ClCompile Include="..\106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp" />
+    <ClCompile Include="..\106_ConstructBinaryTreefromInorderandPostorderTraversal_Test.cpp" />
     <ClCompile Include="..\GTestTemplate.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>
