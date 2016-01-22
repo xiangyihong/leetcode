@@ -150,8 +150,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp" />
-    <ClCompile Include="..\106_ConstructBinaryTreefromInorderandPostorderTraversal_Test.cpp" />
+    <ClCompile Include="..\105_ConstructBinaryTreefromPreorderandInorderTraversal.cpp" />
+    <ClCompile Include="..\105_ConstructBinaryTreefromPreorderandInorderTraversal_Test.cpp" />
     <ClCompile Include="..\GTestTemplate.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>
