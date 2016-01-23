@@ -21,10 +21,10 @@
     <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\105_ConstructBinaryTreefromPreorderandInorderTraversal.cpp">
+    <ClCompile Include="..\78_Subsets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\105_ConstructBinaryTreefromPreorderandInorderTraversal_Test.cpp">
+    <ClCompile Include="..\78_Subsets_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
