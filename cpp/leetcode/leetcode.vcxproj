@@ -150,8 +150,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\136_SingleNumber.cpp" />
-    <ClCompile Include="..\136_SingleNumber_Test.cpp" />
+    <ClCompile Include="..\137_SingleNumberII.cpp" />
+    <ClCompile Include="..\137_SingleNumberII_Test.cpp" />
     <ClCompile Include="..\GTestTemplate.cpp" />
     <ClCompile Include="..\gtest_main.cpp" />
   </ItemGroup>

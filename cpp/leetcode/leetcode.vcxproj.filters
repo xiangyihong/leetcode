@@ -21,10 +21,10 @@
     <ClCompile Include="..\GTestTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\136_SingleNumber.cpp">
+    <ClCompile Include="..\137_SingleNumberII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\136_SingleNumber_Test.cpp">
+    <ClCompile Include="..\137_SingleNumberII_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
