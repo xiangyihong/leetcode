@@ -1,35 +1,20 @@
-import bisect
-
 class Solution(object):
 
-    def find(self, values, target, start_index):
-        index = bisect.bisect_left(values, target, start_index)
-        if index < len(values) and values[index] == target:
-            return index
-        return None
-
-    def findTwoSum(self, values, target):
-
-        result = []
-        for i in range(len(values)):
-            if i > target / 2:
-                break
-            match_value = target - values[i]
-            if self.find(values, match_value, i + 1):
-                result.append([values[i], match_value])
-        return result
-
     def findThreeSum(self, ones, twos, result):
-        pre = None
-        for val in ones:
-            if pre and pre == val:
-                continue
-            tmp_sum = -val
-            matches = self.findTwoSum(twos, tmp_sum)
-            if matches:
-                for item in matches:
-                    result.append([val, item[0], item[1]])
-            pre = val
+
+        for k in ones.keys():
+            # 1.
+            match_value = -k
+            if match_value % 2 == 0:
+                half = match_value // 2
+                count = twos.get(half)
+                if count and count >= 2:
+                    result.append([k, half, half])
+            for x in twos.keys():
+                if (x + x) < match_value:
+                    exists = twos.get(match_value - x)
+                    if exists:
+                        result.append([k, x, match_value - x])
 
     def threeSum(self, nums):
         """
@@ -37,19 +22,18 @@ class Solution(object):
         :rtype: List[List[int]]
         """
 
-        negatives = []
-        zeros = []
-        positives = []
+        negatives = {}
+        zeros_count = 0
+        positives = {}
 
-        for val in enumerate(nums):
+        for val in nums:
             if val > 0:
-                positives.append(val)
+                positives[val] = positives.get(val, 0) + 1
             elif val < 0:
-                negatives.append(val)
+                negatives[val] = negatives.get(val, 0) + 1
             else:
-                zeros.append(val)
+                zeros_count += 1
 
-        positives.sort()
 
         result = []
         # case 1: no zero
@@ -57,14 +41,17 @@ class Solution(object):
         self.findThreeSum(positives, negatives, result)
 
         # case 2: one zero
-        if len(zeros) > 0:
-            for val in negatives:
-                match = self.find(positives, -val, 0)
+        if zeros_count > 0:
+            for k in positives.keys():
+                match = negatives.get(-k)
                 if match:
-                    result.append([val, 0, -val])
+                    result.append([-k, 0, k])
 
         # case 3: three zeros
-        if len(zeros) >= 3:
+        if zeros_count >= 3:
             result.append([0, 0, 0])
+
+        for case in result:
+            case.sort()
 
         return result
